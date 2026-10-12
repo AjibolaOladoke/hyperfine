@@ -538,3 +538,11 @@ Compiled and maintained from upstream [sharkdp/hyperfine](https://github.com/sha
 ---
 
 Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+
+## Sources
+
+Compiled and maintained from upstream [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
