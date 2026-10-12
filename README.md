@@ -6,7 +6,7 @@ This is part of the Swift Tech Co. working stack for product and engineering. It
 
 ## Images
 
-[![hyperfine](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![hyperfine](images/preview.png)](https://github.com/Swift-Tech-Co/hyperfine)
 
 ## Features
 
@@ -137,7 +137,6 @@ when `--shell` is omitted or set to `none`.
 When benchmarked commands use a shell, hyperfine *corrects for the shell spawning time*. It runs the shell with an
 empty command multiple times to measure its startup time, then subtracts this time from each
 time measurement.
-
 
 ### Shell functions
 
@@ -293,15 +292,14 @@ multiple benchmarks.
 For example, these two commands create the following plots:
 
 ```bash
-uvx --from 'git+https://www.swifttechco.com' \
+uvx --from 'git+https://github.com/Swift-Tech-Co/hyperfine' \
   plot_histogram results.json
-uvx --from 'git+https://www.swifttechco.com' \
+uvx --from 'git+https://github.com/Swift-Tech-Co/hyperfine' \
   plot_whisker results.json
 ```
 
-| [![](doc/histogram.png)](https://www.swifttechco.com) | [![](doc/whisker.png)](https://www.swifttechco.com) |
+| [![](doc/histogram.png)](https://github.com/Swift-Tech-Co/hyperfine) | [![](doc/whisker.png)](https://github.com/Swift-Tech-Co/hyperfine) |
 |---:|---:|
-
 
 #### CSV
 
@@ -316,11 +314,11 @@ CSV uses explicitly selected units, or base units (seconds, bytes, or counts) wh
 The following chart explains the execution order of various benchmark runs when using options
 like `--warmup`, `--prepare <cmd>`, `--setup <cmd>` or `--cleanup <cmd>`:
 
-[![](doc/execution-order.png)](https://www.swifttechco.com)
+[![](doc/execution-order.png)](https://github.com/Swift-Tech-Co/hyperfine)
 
 ## Installation
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/hyperfine.svg?columns=3&exclude_unsupported=1)](https://www.swifttechco.com)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/hyperfine.svg?columns=3&exclude_unsupported=1)](https://github.com/Swift-Tech-Co/hyperfine)
 
 ### On Ubuntu
 
@@ -331,7 +329,7 @@ apt install hyperfine
 
 Alternatively, for the latest version, you can download the appropriate `.deb` package from the Release page and install it via `dpkg`:
 ```
-wget https://www.swifttechco.com
+wget https://github.com/Swift-Tech-Co/hyperfine
 sudo dpkg -i hyperfine_2.0.0_amd64.deb
 ```
 
@@ -510,13 +508,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/hyperfine
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
