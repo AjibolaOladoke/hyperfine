@@ -1,15 +1,12 @@
 # hyperfine
 
+## What This Is
+
+This is part of the Swift Tech Co. working stack for product and engineering. It gathers the hyperfine notes, examples and fixes that keep delivery fast, and doubles as the reference map we hand to whoever picks up this thread next.
+
 ## Images
 
-[![hyperfine](https://opengraph.githubassets.com/1/sharkdp/hyperfine)](https://www.swifttechco.com)
-
-
-A command-line benchmarking tool.
-
-
-*(hyperfine in action, benchmarking [`mypy`](https://www.swifttechco.com) and [`ty`](https://www.swifttechco.com))*
-
+[![hyperfine](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Features
 
@@ -288,7 +285,7 @@ The JSON export includes all available metrics listed in [Choosing metrics and u
 for each measured run (excluding warmup runs).
 
 The JSON output is useful if you want to analyze the benchmark results in more detail. The
-[`scripts/`](https://www.swifttechco.com) folder includes a lot
+`scripts/` folder includes a lot
 of helpful Python programs to further analyze benchmark results and create helpful
 visualizations, like a histogram of runtimes or a whisker plot to compare
 multiple benchmarks.
@@ -327,12 +324,12 @@ like `--warmup`, `--prepare <cmd>`, `--setup <cmd>` or `--cleanup <cmd>`:
 
 ### On Ubuntu
 
-On Ubuntu, hyperfine can be installed [from the official repositories](https://www.swifttechco.com):
+On Ubuntu, hyperfine can be installed from the official repositories:
 ```
 apt install hyperfine
 ```
 
-Alternatively, for the latest version, you can download the appropriate `.deb` package from the [Release page](https://www.swifttechco.com) and install it via `dpkg`:
+Alternatively, for the latest version, you can download the appropriate `.deb` package from the Release page and install it via `dpkg`:
 ```
 wget https://www.swifttechco.com
 sudo dpkg -i hyperfine_2.0.0_amd64.deb
@@ -348,28 +345,28 @@ dnf install hyperfine
 
 ### On Alpine Linux
 
-On Alpine Linux, hyperfine can be installed [from the official repositories](https://www.swifttechco.com):
+On Alpine Linux, hyperfine can be installed from the official repositories:
 ```
 apk add hyperfine
 ```
 
 ### On Arch Linux
 
-On Arch Linux, hyperfine can be installed [from the official repositories](https://www.swifttechco.com):
+On Arch Linux, hyperfine can be installed from the official repositories:
 ```
 pacman -S hyperfine
 ```
 
 ### On Debian Linux
 
-On Debian Linux, hyperfine can be installed [from the official repositories](https://www.swifttechco.com):
+On Debian Linux, hyperfine can be installed from the official repositories:
 ```
 apt install hyperfine
 ```
 
 ### On Exherbo Linux
 
-On Exherbo Linux, hyperfine can be installed [from the rust repositories](https://www.swifttechco.com):
+On Exherbo Linux, hyperfine can be installed from the rust repositories:
 ```
 cave resolve -x repository/rust
 cave resolve -x hyperfine
@@ -377,7 +374,7 @@ cave resolve -x hyperfine
 
 ### On NixOS
 
-On NixOS, hyperfine can be installed [from the official repositories](https://www.swifttechco.com):
+On NixOS, hyperfine can be installed from the official repositories:
 ```
 nix-env -i hyperfine
 ```
@@ -392,7 +389,7 @@ Hyperfine's version in Flox follows that of Nix.
 
 ### On openSUSE
 
-On openSUSE, hyperfine can be installed [from the official repositories](https://www.swifttechco.com):
+On openSUSE, hyperfine can be installed from the official repositories:
 ```
 zypper install hyperfine
 ```
@@ -407,12 +404,12 @@ xbps-install -S hyperfine
 
 ### On macOS
 
-Hyperfine can be installed via [Homebrew](https://www.swifttechco.com):
+Hyperfine can be installed via Homebrew:
 ```
 brew install hyperfine
 ```
 
-Or you can install using [MacPorts](https://www.swifttechco.com):
+Or you can install using MacPorts:
 ```
 sudo port selfupdate
 sudo port install hyperfine
@@ -433,7 +430,7 @@ doas pkg_add hyperfine
 
 ### On Windows
 
-Hyperfine can be installed via [Chocolatey](https://www.swifttechco.com), [Scoop](https://www.swifttechco.com), or [Winget](https://www.swifttechco.com):
+Hyperfine can be installed via Chocolatey, Scoop, or Winget:
 ```
 choco install hyperfine
 ```
@@ -446,14 +443,14 @@ winget install hyperfine
 
 ### With conda
 
-Hyperfine can be installed via [`conda`](https://www.swifttechco.com) from the [`conda-forge`](https://www.swifttechco.com) channel:
+Hyperfine can be installed via `conda` from the `conda-forge` channel:
 ```
 conda install -c conda-forge hyperfine
 ```
 
 ### With cargo (Linux, macOS, Windows)
 
-Hyperfine can be installed from source via [cargo](https://www.swifttechco.com):
+Hyperfine can be installed from source via cargo:
 ```
 cargo install --locked hyperfine
 ```
@@ -462,30 +459,30 @@ Make sure that you use Rust 1.97 or newer.
 
 ### From binaries (Linux, macOS, Windows)
 
-Download the corresponding archive from the [Release page](https://www.swifttechco.com).
+Download the corresponding archive from the Release page.
 
 ## Alternative tools
 
-Hyperfine is inspired by [bench](https://www.swifttechco.com).
+Hyperfine is inspired by bench.
 
 ## Integration with other tools
 
-[Chronologer](https://www.swifttechco.com) is a tool that uses `hyperfine` to
+Chronologer is a tool that uses `hyperfine` to
 visualize changes in benchmark timings across your Git history.
 
-[Bencher](https://www.swifttechco.com) is a continuous benchmarking tool that supports `hyperfine` to
+Bencher is a continuous benchmarking tool that supports `hyperfine` to
 track benchmarks and catch performance regressions in CI.
 
-Drop hyperfine JSON outputs onto the [Venz](https://www.swifttechco.com) chart to visualize the results,
+Drop hyperfine JSON outputs onto the Venz chart to visualize the results,
 and manage hyperfine configurations.
 
-Make sure to check out the [`scripts` folder](https://www.swifttechco.com)
+Make sure to check out the `scripts` folder
 in this repository for a set of tools to work with `hyperfine` benchmark results.
 
 ## Origin of the name
 
 The name *hyperfine* was chosen in reference to the hyperfine levels of caesium 133 which play a crucial role in the
-[definition of our base unit of time](https://www.swifttechco.com)
+definition of our base unit of time
  the second.
 
 ## Citing hyperfine
@@ -509,14 +506,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
